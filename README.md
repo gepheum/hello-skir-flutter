@@ -49,16 +49,9 @@ flutter run
 > default, which works for iOS simulators. For Android emulators, replace
 > `localhost` with `10.0.2.2` in `frontend/lib/main.dart`.
 
-## Pre-commit hook
+## Pre-commit checks
 
-To install a Git pre-commit hook that runs codegen, linting, and type-checking
-automatically before every commit:
-
-```sh
-bash pre_commit_setup.sh
-```
-
-To run the checks manually:
+To run codegen, linting, and type-checking:
 
 ```sh
 bash pre_commit.sh
@@ -73,4 +66,3 @@ bash pre_commit.sh
 | `backend/src/server.ts` | Bun HTTP server exposing the `Greet` method |
 | `frontend/lib/main.dart` | Flutter UI that calls `Greet` and displays the response |
 | `pre_commit.sh` | Linting / type-checking script |
-| `pre_commit_setup.sh` | Installs `pre_commit.sh` as a Git pre-commit hook |
